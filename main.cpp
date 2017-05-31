@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     cout << "Filename: " + filename;
     cout << endl << endl;
-    for(vector<int>::size_type i = 0; i != teams.size(); i++) {
+    for (vector<int>::size_type i = 0; i != teams.size(); i++) {
         string team_line = "| Team: " + teams[i].name + " |";
         string wins_line = "| Super Bowl Wins: " + convertIntToString(teams[i].super_bowl_wins);
         int ws = team_line.size() - wins_line.size() - 2;
@@ -46,4 +46,5 @@ int main(int argc, const char * argv[]) {
         cout << border << endl;
         cout << endl;
     }
+    return 0;
 }
